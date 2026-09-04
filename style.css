@@ -1,0 +1,163 @@
+body{
+  font-family: Arial, sans-serif;
+  background-color: #eef7ec;
+  background-image:
+    linear-gradient(180deg, rgba(239,247,237,0.96), rgba(247,251,247,1)),
+    radial-gradient(circle at 20% 10%, rgba(255,255,255,0.85), transparent 18%),
+    radial-gradient(circle at 80% 30%, rgba(255,255,255,0.8), transparent 14%),
+    radial-gradient(circle at 50% 90%, rgba(220,241,214,0.8), transparent 18%),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160' viewBox='0 0 160 160'%3E%3Cpath fill='%2390c18a' d='M45 100c10-10 30-40 45-45s30 0 35 5 10 15 5 25-20 20-35 25-30 5-40 0-15-10-10-10z'/%3E%3Cpath fill='%2382b769' d='M60 120c10-12 25-35 35-40s20-5 25 0 10 15 5 20-20 15-35 18-25 5-30 2-5-5 0-5z'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-attachment: fixed;
+  color: #1e3d2d;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+
+body::before {
+  /* subtle, dense emoji pattern for a botanical feel */
+  content: "🌿 🌱 🍃 🌿 🌱 🍃 🌿 🌱 🍃 🌿 🌱 🍃 🌿 🌱 🍃 🌿 🌱 🍃\A\
+🌱 🍃 🌿 🌱 🍃 🌿 🌱 🍃 🌿 🌱 🍃 🌿 🌱 🍃 🌿 🌱 🍃\A\
+🍃 🌿 🌱 🍃 🌿 🌱 🍃 🌿 🌱 🍃 🌿 🌱 🍃 🌿 🌱 🍃\A\
+🌿 🌱 🍃 🌿 🌱 🍃 🌿 🌱 🍃 🌿 🌱 🍃 🌿 🌱 🍃 🌿 🌱 🍃";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  color: rgba(34, 139, 34, 0.06);
+  font-size: 1.7rem;
+  line-height: 2.2rem;
+  white-space: pre-wrap;
+  text-align: center;
+  z-index: 0;
+  mix-blend-mode: multiply;
+  transform: translateY(-6vh) rotate(-1deg);
+}
+
+.hero{
+  padding:60px 20px;
+  background:#e8f5e9;
+}
+
+.hero h1{
+font-size:3rem;
+font-weight:bold;
+color:#198754;
+}
+
+.hero p{
+font-size:1.3rem;
+}
+
+.custom-card{
+transition:0.3s;
+border:none;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+.custom-card:hover{
+transform:translateY(-8px);
+}
+
+.card-link{
+text-decoration:none;
+color:black;
+}
+
+footer{
+background:#198754;
+color:white;
+text-align:center;
+padding:15px;
+margin-top:30px;
+}
+.custom-card{
+border:none;
+border-radius:15px;
+box-shadow:0 4px 15px rgba(0,0,0,0.1);
+transition:0.3s;
+background:white;
+}
+
+.custom-card:hover{
+transform:translateY(-10px);
+}
+
+.custom-card i{
+color:#198754;
+}
+.hero-subtitle{
+font-size:2.2rem;
+font-weight:700;
+color:#2e7d32;
+letter-spacing:1px;
+margin-top:10px;
+}
+
+.lead{
+font-size: 1.2rem;
+max-width: 800px;
+margin: auto;
+color: #555;
+}
+.main-title{
+font-size:4rem;
+font-weight:800;
+color:#198754;
+text-transform:uppercase;
+margin-bottom:10px;
+}
+
+.hero-tagline{
+font-size:1.6rem;
+font-weight:500;
+color:#555;
+margin-bottom:20px;
+}
+
+.hero img{
+max-width:800px;
+width:100%;
+border-radius:15px;
+}
+
+.custom-card{
+  border:none;
+  border-radius:15px;
+  box-shadow:0 4px 15px rgba(0,0,0,0.1);
+  transition:0.3s;
+  background: rgba(255,255,255,0.95);
+  border-top: 4px solid rgba(76, 175, 80, 0.35);
+}
+
+.custom-card:hover{
+  transform:translateY(-10px);
+  box-shadow:0 15px 30px rgba(0,0,0,0.12);
+}
+
+.custom-card i{
+  color:#198754;
+}
+
+.hero img{
+  border: 6px solid rgba(76, 175, 80, 0.18);
+  box-shadow: 0 20px 40px rgba(76, 175, 80, 0.12);
+}
+
+.hero, .custom-card{
+  position: relative;
+  z-index: 1;
+}
+```css
+.card-img-top{
+height:250px;
+object-fit:cover;
+}
+```
+.custom-card{
+transition:0.3s;
+}
+
+.custom-card:hover{
+transform:translateY(-10px);
+}
